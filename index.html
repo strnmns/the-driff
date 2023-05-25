@@ -80,6 +80,47 @@
         overflow-x: hidden;
         overflow-y: auto;
       }
+      .no-padding {
+        padding-top: 0 !important;
+        width: auto;
+      }
+      
+      .heroh {
+        padding: 0 !important;
+        min-height: 480px !important;
+      }
+  
+      
+      
+      .container {
+        width: 90%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (min-width: 768px) {
+        .container {
+          width: 50%;
+        }
+      }
+      canvas {
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        filter: blur(70px);
+        -webkit-filter: blur(70px);
+        z-index: 10;
+      }
+      
+      video {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 11;
+        border-radius: 0.6em;
+      }
+
     </style>
   </div>
   <div class="section navsection">
@@ -113,18 +154,31 @@
       </div>
     </div>
   </div>
-  <div class="section herohome">
+  <div class="section herohome heroh">
     <div class="wrap herosection">
       <div class="herowrap">
         <h1 class="cc-mw-740">Ignite your brand with <span id="homeHighlight" class="highlightspan">wonderful</span>  video ads.</h1>
         <div data-w-id="f435eb43-a63e-9f94-13a8-fd0fc4f90eb6" style="opacity:0" class="cc-mw-740">We work with amazing people at AI and SaaS startups to create scroll-stopping video ads that actually matter to their buyers.</div>
       </div>
     </div>
+    
   </div>
+    <div class="wrap no-padding">
+
+        <canvas id="canvas"></canvas>
+        <video id="video" width="1280" height="720" controls>
+        <source src="Driff Hero Alt.mp4" type="video/mp4">
+      </div>
+      
+    
+    </div>
+
+  
   <div id="contentHome" data-w-id="9dc5ba1f-3836-8a82-419b-79b464a0c441" style="opacity:0" class="section founders">
     <div class="wrap sellingwrap">
       <div>
-        <h2 class="cc-centered cc-mw-940">Making content can be brutal…</h2>
+        <h2 class="cc-centered cc-mw-940">Get a B2B SaaS video your prospects will <i>love…</i></h2>
+        <br>
         <div class="w-embed">
           <style>
             #sellingimagecut {
@@ -149,8 +203,8 @@
         <div class="sellingbusinesswrap"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21dd68f36fe25cb3bdc872_illustration_1.png" id="sellingimage" sizes="(max-width: 991px) 100vw, 1190px" srcset="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21dd68f36fe25cb3bdc872_illustration_1-p-500.png 500w, https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21dd68f36fe25cb3bdc872_illustration_1-p-800.png 800w, https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21dd68f36fe25cb3bdc872_illustration_1.png 2241w" alt="" class="sellingimage sellimagefull" />
           <div class="w-layout-grid sellinggrid"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21e444acd4dad75e173c9e_illustration_1-edit%20(1).png" id="sellingimagecut" sizes="(max-width: 479px) 92vw, (max-width: 767px) 93vw, (max-width: 991px) 640px, 100vw" srcset="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21e444acd4dad75e173c9e_illustration_1-edit%20(1)-p-500.png 500w, https://assets.website-files.com/5f10771cbfea70224f1ce526/5f21e444acd4dad75e173c9e_illustration_1-edit%20(1).png 1117w" alt="" class="sellingimage w-node-e00d7aa3-a32e-e098-520c-f24d26af91ff-b09929b6" />
             <div id="w-node-_9dc5ba1f-3836-8a82-419b-79b464a0c448-b09929b6" class="sellingcontent">
-              <div class="serifbody1"> Creating high quality videos takes bandwidth you don’t have. <br /><br />Outsourcing is often hit-or-miss. You'll have to deal with recruiting, lengthy contracts, and long monthly retainers... </div>
-              <div class="serifbody1">But it doesn't have to be this way: we'll handle everything so you can focus on making your software the best it can be. <br /><br />We’ve got you.<br /></div>
+              <div class="serifbody1"> Prospects are people just like the rest of us — they respond to emotion. <br /><br />We make video ads and product videos that make people <i>feel</i> something. </div>
+              <div class="serifbody1">Something they’ll remember not only tomorrow, but also years down the line. <br /><br />And when you create a video  with Driff, you invest in your brand awareness, drive sales, and see a clear, lasting ROI.<br /></div>
             </div>
           </div>
         </div>
@@ -372,23 +426,28 @@
           <div class="heading3">1 month</div>
         </div><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f12169a28d1800aaac32ec5_Vector%201.svg" id="w-node-_1bd3df8d-3c9a-919c-fe80-04b248e5c97a-b09929b6" alt="" />
       </div>
+      
+    </div>
+    <div class="wrap">
+      <div class="headline2 cc-centered">You don't just get a video, you also get:</div>
+      <br>
       <ul role="list" class="timelist w-list-unstyled">
         
         <li class="listitem centeredlist"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f553fb833882b597ce24846_check-white.svg" alt="" class="whyicon whiteprocessicon" />
-          <div class="serifbody1 processpoint">We'll repurpose content for TikTok and Instagram at no extra cost</div>
+          <div class="serifbody1 processpoint">76% higher clickthrough rate</div>
         </li>
         
         <li class="listitem centeredlist"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f553fb833882b597ce24846_check-white.svg" alt="" class="whyicon whiteprocessicon" />
-          <div class="serifbody1 processpoint">No golden handcuffs and monthly retainers </div>
+          <div class="serifbody1 processpoint">81% Higher completion rate</div>
         </li>
         <li class="listitem centeredlist"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f553fb833882b597ce24846_check-white.svg" alt="" class="whyicon whiteprocessicon" />
-          <div class="serifbody1 processpoint">No in-person meetings</div>
+          <div class="serifbody1 processpoint">67% View-through rate</div>
+        </li>
+        <li class="listitem centeredlist"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f553fb833882b597ce24846_check-white.svg" alt="" class="whyicon whiteprocessicon" />
+          <div class="serifbody1 processpoint">32% Cheaper cost per click</div>
         </li>
       </ul>
-    </div>
-    <div class="wrap">
-      <div class="headline2 cc-centered">We only work with companies that:</div>
-      <div class="w-layout-grid familygrid-try">
+      <!-- <div class="w-layout-grid familygrid-try">
         
         
         <div id="w-node-c68900be-3861-05e4-78eb-967f0c8d3ff7-b09929b6" class="valuewrap"><img src="https://assets.website-files.com/5f10771cbfea70224f1ce526/5f2c72f179358d80c90cbdd4_icon-puzzle.png" width="120" alt="" class="buyicon" />
@@ -408,7 +467,7 @@
           <div class="sansbody2b">Positive and ethical approach</div>
           <div class="sansbody2">No sketchy stuff</div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="wrap finalcta">
@@ -437,6 +496,7 @@
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f10771cbfea70224f1ce526" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://assets.website-files.com/5f10771cbfea70224f1ce526/js/tinytiny.62f56a111.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <script src="main.js"></script>
 
   <script>
     $(document).ready(function() {
